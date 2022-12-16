@@ -9,3 +9,9 @@
 _Live Website_ : [Link](https://crypto-markety.netlify.app/)
 
 ### This webpage is  not Completely Responsive as of now .
+
+## **Expected Output:**
+![Crypto Market](./output.png)
+
+## **Achieved Output:**
+![Crypto Market](./CRYPTO-MARKET.png)
