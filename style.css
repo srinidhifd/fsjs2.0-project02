@@ -1,0 +1,122 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "montserrat";
+    height: 100vh;  
+}
+/* ----------------------- */
+/* Navigation starts */
+/* ----------------------- */
+.navbar{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: #000000;
+    height: 10vh;
+}
+.navbar .list{
+    color: #ffffff;
+    list-style-type: none;
+    display: flex;
+    margin:0px 90px 0px 90px  ;
+}
+.navbar li{
+padding-right: 80px;
+}
+.navbar img{
+width: 5em;
+margin: 0px 80px 0px 100px ;
+}
+.navbar .line::after{
+    content: "|";
+    color:#ffffff;
+}
+.navbar ul li:first-child::after{
+content: " ˅ ";
+margin: 5px ; 
+}
+.navbar .button-small{
+color: #ffffff;
+border: none;
+font-weight: 600;
+margin-left:100px ;
+padding: 10px 35px ;
+background-color: rgb(194, 26, 194);
+border-radius: 5px;
+text-align: center;
+}
+
+/* ----------------------- */
+/*       Hero-section      */
+/* ----------------------- */
+
+.hero {
+    background-image: url(./assets/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100% ;
+    height: 90vh;
+    width: 100vw;
+}
+
+.hero .hero-heading{
+    color: #ffffff;
+    font-size: 4.5em;
+    padding: 7% 0px 0px 30%;
+}
+.hero .hero-description{
+color: #ffffff;
+font-size: 1.4em;
+font-weight: 400;
+text-align: center;
+}
+.hero .button-large{
+    font-size: 1.1em;
+    margin: 2% 0px 0px 45%;
+    color: #ffffff;
+border: none;
+font-weight: 600;
+padding: 15px 35px ;
+background-color: rgb(194, 26, 194);
+border-radius: 7px;
+}
+
+/* ============================================== */
+/* Media queries for mobile responsive design  */
+/* ============================================== */
+
+@media (max-width:600px){
+    .navbar .grow-list, .line{
+        display: none;
+    }
+    .navbar img{
+        width: 90px;
+        padding: 0px;
+        margin: 0px 0px 0px 50% ;
+    }
+    .navbar .button-small{
+        padding: 10px 35px ;
+        margin: 0px 0px 0px 8em;        
+    }
+    .hero .hero-heading{
+        padding: 100px 0px 20px 0px ;
+        font-size: 2.2em;
+        text-align: center;
+    }
+    .hero .hero-description{
+        font-size: 1.3em;   
+    }
+    .hero .button-large{
+        margin: 30px 10px 10px 20% ;
+    }
+} 
+
+
+
+
+
